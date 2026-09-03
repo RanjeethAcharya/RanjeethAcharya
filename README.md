@@ -22,7 +22,7 @@
 
 ---
 
-### 🧑🏻‍💻 Console: `ranjeeth@cloud:~$ whoami --full`
+### 💻 Developer Console: `ranjeeth@cloud:~$ whoami --full`
 
 ```yaml
 Identity: Ranjeeth Acharya
@@ -90,12 +90,19 @@ Status: 🚀 Building automated, resilient and zero-downtime cloud infrastructur
 ### 📊 GitHub Activity & Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RanjeethAcharya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=ff9900&text_color=cbd5e1" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RanjeethAcharya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=cbd5e1" height="165" alt="Top Languages" />
+  <img src="https://github-profile-trophy.vercel.app/?username=RanjeethAcharya&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
 </div>
+
+<br />
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=RanjeethAcharya&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=ff9900&currStreakLabel=38bdf8" height="150" alt="GitHub Streak Stats" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://activity-graph.herokuapp.com/graph?username=RanjeethAcharya&theme=tokyo-night&bg_color=0d1117&color=38bdf8&line=38bdf8&point=ff9900&area=true&hide_border=true" width="100%" alt="Contribution Graph" />
 </div>
 
 ---
