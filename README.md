@@ -22,7 +22,7 @@
 
 ---
 
-### 💻 Developer Console: `ranjeeth@cloud:~$ whoami --full`
+### 🧑🏻‍💻 Console: `ranjeeth@cloud:~$ whoami --full`
 
 ```yaml
 Identity: Ranjeeth Acharya
