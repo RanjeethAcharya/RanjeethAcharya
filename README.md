@@ -90,19 +90,13 @@ Status: 🚀 Building automated, resilient and zero-downtime cloud infrastructur
 ### 📊 GitHub Activity & Statistics
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=RanjeethAcharya&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+  <img src="https://komarev.com/ghpvc/?username=RanjeethAcharya&label=Profile%20Views&color=0284c7&style=for-the-badge" alt="Profile Views" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RanjeethAcharya&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=ff9900&currStreakLabel=38bdf8" height="150" alt="GitHub Streak Stats" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://activity-graph.herokuapp.com/graph?username=RanjeethAcharya&theme=tokyo-night&bg_color=0d1117&color=38bdf8&line=38bdf8&point=ff9900&area=true&hide_border=true" width="100%" alt="Contribution Graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RanjeethAcharya&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=ff9900&currStreakLabel=38bdf8" height="160" alt="GitHub Streak Stats" />
 </div>
 
 ---
