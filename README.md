@@ -24,16 +24,22 @@
 
 ### 💻 Developer Console: `ranjeeth@cloud:~$ whoami --full`
 
-<div align="center">
-  <a href="https://ranjeeth.portfo.workers.dev" target="_blank">
-    <img src="./terminal-scroll.svg" alt="DevOps Live Terminal Console" width="100%" />
-  </a>
-</div>
-
-<br />
+```yaml
+Identity: Ranjeeth Acharya
+Role: Junior Cloud & DevOps Engineer
+Company: Unni AI Labs
+Location: Mumbai, India
+Specialization:
+  - Multi-Cloud: Amazon Web Services (AWS) & Google Cloud (GCP)
+  - Containers: Kubernetes (Amazon EKS), Docker, Helm, ArgoCD
+  - Infrastructure as Code: Terraform (100% Declarative)
+  - Automation: CI/CD Pipelines (Jenkins, GitHub Actions, Bash)
+  - Monitoring: Prometheus, Grafana, AWS CloudWatch, EFK Stack
+Status: 🚀 Building automated, resilient and zero-downtime cloud infrastructure
+```
 
 - 💼 **Current Role**: Junior Cloud & DevOps Engineer at **Unni AI Labs**
-- 🔭 **Core Focus**: Amazon EKS, Google Cloud Run, Terraform (IaC), Jenkins, ArgoCD, Docker
+- 🔭 **Expertise**: Amazon EKS, Cloud Run, Terraform IaC, Jenkins, ArgoCD, Docker
 - 🌐 **Live Interactive Portfolio**: [ranjeeth.portfo.workers.dev](https://ranjeeth.portfo.workers.dev)
 - 📫 **Direct Contact**: [ranjeethacharya3302@gmail.com](mailto:ranjeethacharya3302@gmail.com)
 
