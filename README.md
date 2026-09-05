@@ -26,7 +26,7 @@
 
 <div align="center">
   <a href="https://ranjeeth.portfo.workers.dev" target="_blank">
-    <img src="https://raw.githubusercontent.com/RanjeethAcharya/ranjeeth_portfolio/main/public/images/terminal-scroll.svg" alt="DevOps Live Terminal Console" width="100%" />
+    <img src="./terminal-scroll.svg" alt="DevOps Live Terminal Console" width="100%" />
   </a>
 </div>
 
