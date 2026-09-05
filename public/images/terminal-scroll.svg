@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 370" width="100%" height="370" style="background: transparent;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a10" />
+      <stop offset="50%" stop-color="#0b111c" />
+      <stop offset="100%" stop-color="#05080d" />
+    </linearGradient>
+
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141c2e" />
+      <stop offset="100%" stop-color="#0e1626" />
+    </linearGradient>
+
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Top & Bottom Soft Fading Gradients (100% reliable across all proxies) -->
+    <linearGradient id="top-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="bottom-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" stop-opacity="0" />
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Scanline Pattern Overlay -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.5" opacity="0.25" />
+    </pattern>
+
+    <!-- Clip Path for Terminal Body -->
+    <clipPath id="terminal-body-clip">
+      <rect x="0" y="42" width="840" height="326" rx="0" ry="0" />
+    </clipPath>
+
+    <style>
+      @keyframes terminalScroll {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-700px); }
+      }
+
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+
+      .terminal-stream {
+        animation: terminalScroll 22s linear infinite;
+      }
+
+      .status-pulse {
+        animation: pulseDot 2s ease-in-out infinite;
+      }
+
+      text {
+        font-family: 'Fira Code', 'SF Mono', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+        font-size: 13px;
+        letter-spacing: -0.01em;
+      }
+
+      .prompt { fill: #10b981; font-weight: 700; }
+      .cmd { fill: #38bdf8; font-weight: 600; }
+      .tag { fill: #c084fc; font-weight: 600; }
+      .tag-role { fill: #38bdf8; font-weight: 600; }
+      .text-white { fill: #f1f5f9; font-weight: 500; }
+      .text-dim { fill: #94a3b8; }
+      .text-muted { fill: #475569; }
+      .text-green { fill: #34d399; font-weight: 500; }
+      .text-cyan { fill: #38bdf8; font-weight: 600; }
+      .text-head { fill: #64748b; font-weight: 600; letter-spacing: 0.04em; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Container -->
+  <g>
+    <!-- Background Card with Glow Border -->
+    <rect x="1" y="1" width="838" height="368" rx="12" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.5" />
+
+    <!-- Terminal Header Bar -->
+    <path d="M 1 13 A 12 12 0 0 1 13 1 L 827 1 A 12 12 0 0 1 839 13 L 839 42 L 1 42 Z" fill="url(#header-grad)" />
+    <line x1="1" y1="42" x2="839" y2="42" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+
+    <!-- macOS Window Control Dots -->
+    <circle cx="24" cy="21" r="6" fill="#ef4444" />
+    <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="21" r="6" fill="#10b981" />
+
+    <!-- Window Title -->
+    <text x="420" y="26" text-anchor="middle" fill="#94a3b8" font-size="12.5" font-weight="600">ranjeeth@cloud: ~ (zsh)</text>
+
+    <!-- Status Indicator Badge (Right) -->
+    <g>
+      <rect x="710" y="10" width="112" height="22" rx="11" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.3" stroke-width="1" />
+      <circle cx="724" cy="21" r="4" fill="#10b981" class="status-pulse" />
+      <text x="736" y="25" fill="#34d399" font-size="10.5" font-weight="700" letter-spacing="0.05em">LIVE PROD</text>
+    </g>
+  </g>
+
+  <!-- Scrolling Terminal Body (Clipped to Window) -->
+  <g clip-path="url(#terminal-body-clip)">
+    <g class="terminal-stream">
+
+      <!-- ==========================================
+           BLOCK 1 (Height: 700px)
+           ========================================== -->
+      <g transform="translate(24, 72)">
+        <!-- Command 1: whoami --full -->
+        <text y="0"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">whoami --full</tspan></text>
+        <text y="21"><tspan class="tag">[IDENTITY]</tspan> <tspan class="text-white">Ranjeeth Acharya</tspan> <tspan class="text-muted">|</tspan> <tspan class="tag-role">Junior Cloud &amp; DevOps Engineer</tspan></text>
+        <text y="42"><tspan class="tag">[COMPANY]</tspan> <tspan class="text-white">Unni AI Labs</tspan> <tspan class="text-muted">|</tspan> <tspan class="text-dim">Mumbai, India</tspan></text>
+        <text y="63"><tspan class="tag">[MULTI-CLOUD]</tspan> <tspan class="text-cyan">AWS</tspan> <tspan class="text-dim">(EKS, EC2, RDS, S3, IAM)</tspan> <tspan class="text-muted">&amp;</tspan> <tspan class="text-cyan">GCP</tspan> <tspan class="text-dim">(Cloud Run, Cloud SQL, GCS)</tspan></text>
+        <text y="84"><tspan class="tag">[CONTAINERS]</tspan> <tspan class="text-white">Kubernetes (Amazon EKS), Docker, Helm, ArgoCD GitOps</tspan></text>
+        <text y="105"><tspan class="tag">[AUTOMATION]</tspan> <tspan class="text-white">Terraform IaC (100% Declarative), Jenkins, GitHub Actions, Bash</tspan></text>
+        <text y="126"><tspan class="tag">[OBSERVABILITY]</tspan> <tspan class="text-white">Prometheus, Grafana, AWS CloudWatch, EFK Stack</tspan></text>
+        <text y="147"><tspan class="tag">[STATUS]</tspan> <tspan class="text-green">🚀 Building automated, resilient &amp; zero-downtime cloud infrastructure</tspan></text>
+
+        <!-- Command 2: terraform apply -->
+        <text y="192"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">terraform apply -auto-approve</tspan></text>
+        <text y="213" class="text-dim">[+] aws_vpc.main_vpc: Creating... [Multi-AZ: us-east-1a, 1b]</text>
+        <text y="234" class="text-green">[✓] aws_eks_cluster.production_mesh: Created (3m 12s)</text>
+        <text y="255" class="text-green">Apply complete! Resources: 18 added, 0 changed, 0 destroyed.</text>
+
+        <!-- Command 3: kubectl get pods -->
+        <text y="300"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">kubectl get pods -n production</tspan></text>
+        <text y="321" class="text-head">NAME                                    READY   STATUS    RESTARTS   AGE</text>
+        <text y="342" class="text-green">api-gateway-7f89d-xk92m                 1/1     Running   0          42d</text>
+        <text y="363" class="text-green">auth-service-54b2c-99plq                1/1     Running   0          42d</text>
+        <text y="384" class="text-green">ingress-nginx-controller-88             1/1     Running   0          42d</text>
+        <text y="405" class="text-green">school-mgmt-cloudrun-v2                 1/1     Running   0          18d</text>
+
+        <!-- Command 4: docker build -->
+        <text y="450"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">docker build -t cloud-app:v2.4 .</tspan></text>
+        <text y="471" class="text-dim">[+] Building 12/12 steps complete [OK] -&gt; SHA256:7f92a10c</text>
+        <text y="492" class="text-green">Successfully tagged cloud-app:v2.4 and pushed to AWS ECR</text>
+
+        <!-- Command 5: helm upgrade -->
+        <text y="537"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">helm upgrade --install api ./chart -n production</tspan></text>
+        <text y="558" class="text-green">Release &quot;api&quot; deployed to EKS cluster. Status: DEPLOYED</text>
+
+        <!-- Command 6: git push -->
+        <text y="603"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">git push origin main</tspan></text>
+        <text y="624" class="text-dim">&gt; GitHub Actions CI/CD Triggered #1084</text>
+        <text y="645" class="text-green">[✓] Pipeline Passed: Lint -&gt; Test -&gt; Terraform -&gt; EKS Deploy</text>
+      </g>
+
+      <!-- ==========================================
+           BLOCK 2 (Duplicate for Seamless Scroll Loop at y=700)
+           ========================================== -->
+      <g transform="translate(24, 772)">
+        <!-- Command 1: whoami --full -->
+        <text y="0"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">whoami --full</tspan></text>
+        <text y="21"><tspan class="tag">[IDENTITY]</tspan> <tspan class="text-white">Ranjeeth Acharya</tspan> <tspan class="text-muted">|</tspan> <tspan class="tag-role">Junior Cloud &amp; DevOps Engineer</tspan></text>
+        <text y="42"><tspan class="tag">[COMPANY]</tspan> <tspan class="text-white">Unni AI Labs</tspan> <tspan class="text-muted">|</tspan> <tspan class="text-dim">Mumbai, India</tspan></text>
+        <text y="63"><tspan class="tag">[MULTI-CLOUD]</tspan> <tspan class="text-cyan">AWS</tspan> <tspan class="text-dim">(EKS, EC2, RDS, S3, IAM)</tspan> <tspan class="text-muted">&amp;</tspan> <tspan class="text-cyan">GCP</tspan> <tspan class="text-dim">(Cloud Run, Cloud SQL, GCS)</tspan></text>
+        <text y="84"><tspan class="tag">[CONTAINERS]</tspan> <tspan class="text-white">Kubernetes (Amazon EKS), Docker, Helm, ArgoCD GitOps</tspan></text>
+        <text y="105"><tspan class="tag">[AUTOMATION]</tspan> <tspan class="text-white">Terraform IaC (100% Declarative), Jenkins, GitHub Actions, Bash</tspan></text>
+        <text y="126"><tspan class="tag">[OBSERVABILITY]</tspan> <tspan class="text-white">Prometheus, Grafana, AWS CloudWatch, EFK Stack</tspan></text>
+        <text y="147"><tspan class="tag">[STATUS]</tspan> <tspan class="text-green">🚀 Building automated, resilient &amp; zero-downtime cloud infrastructure</tspan></text>
+
+        <!-- Command 2: terraform apply -->
+        <text y="192"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">terraform apply -auto-approve</tspan></text>
+        <text y="213" class="text-dim">[+] aws_vpc.main_vpc: Creating... [Multi-AZ: us-east-1a, 1b]</text>
+        <text y="234" class="text-green">[✓] aws_eks_cluster.production_mesh: Created (3m 12s)</text>
+        <text y="255" class="text-green">Apply complete! Resources: 18 added, 0 changed, 0 destroyed.</text>
+
+        <!-- Command 3: kubectl get pods -->
+        <text y="300"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">kubectl get pods -n production</tspan></text>
+        <text y="321" class="text-head">NAME                                    READY   STATUS    RESTARTS   AGE</text>
+        <text y="342" class="text-green">api-gateway-7f89d-xk92m                 1/1     Running   0          42d</text>
+        <text y="363" class="text-green">auth-service-54b2c-99plq                1/1     Running   0          42d</text>
+        <text y="384" class="text-green">ingress-nginx-controller-88             1/1     Running   0          42d</text>
+        <text y="405" class="text-green">school-mgmt-cloudrun-v2                 1/1     Running   0          18d</text>
+
+        <!-- Command 4: docker build -->
+        <text y="450"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">docker build -t cloud-app:v2.4 .</tspan></text>
+        <text y="471" class="text-dim">[+] Building 12/12 steps complete [OK] -&gt; SHA256:7f92a10c</text>
+        <text y="492" class="text-green">Successfully tagged cloud-app:v2.4 and pushed to AWS ECR</text>
+
+        <!-- Command 5: helm upgrade -->
+        <text y="537"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">helm upgrade --install api ./chart -n production</tspan></text>
+        <text y="558" class="text-green">Release &quot;api&quot; deployed to EKS cluster. Status: DEPLOYED</text>
+
+        <!-- Command 6: git push -->
+        <text y="603"><tspan class="prompt">ranjeeth@cloud:~$</tspan> <tspan class="cmd">git push origin main</tspan></text>
+        <text y="624" class="text-dim">&gt; GitHub Actions CI/CD Triggered #1084</text>
+        <text y="645" class="text-green">[✓] Pipeline Passed: Lint -&gt; Test -&gt; Terraform -&gt; EKS Deploy</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Top & Bottom Soft Fading Overlays -->
+  <rect x="0" y="42" width="840" height="28" fill="url(#top-fade)" pointer-events="none" />
+  <rect x="0" y="338" width="840" height="30" fill="url(#bottom-fade)" pointer-events="none" />
+
+  <!-- Scanlines Fine Overlay on Body -->
+  <rect x="0" y="42" width="840" height="326" fill="url(#scanlines)" pointer-events="none" />
+</svg>

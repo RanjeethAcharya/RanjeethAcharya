@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="80%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.5" flood-color="#000"/>
+    </filter>
+  </defs>
+  <!-- Sleek, robotic chrome pointer hand -->
+  <g transform="rotate(-15, 16, 16)" filter="url(#shadow)">
+    <path fill="url(#chrome)" stroke="#475569" stroke-width="1.5" stroke-linejoin="round" d="M14 11V3.5C14 2.1 15.1 1 16.5 1S19 2.1 19 3.5V13h1c1.1 0 2 .9 2 2v1h1c1.1 0 2 .9 2 2v1h1c1.1 0 2 .9 2 2v8c0 2.2-1.8 4-4 4H12c-2.2 0-4-1.8-4-4v-4.5c0-1.1.9-2 2-2h.5V13c0-1.1.9-2 2-2z"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+  <!-- Rotated for a natural pointing angle -->
+  <g transform="rotate(-15, 12, 12)">
+    <!-- Base hand with peach skin and thick dark brown stroke -->
+    <path fill="#FFCBA4" stroke="#4A2511" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" 
+          d="M10 3.5C10 2.1 11.8 2.1 11.8 3.5V11H13.2C13.8 11 14.2 11.4 14.2 12V11.2C14.2 10.6 15.2 10.6 15.2 11.2V12V11.8C15.2 11.2 16.2 11.2 16.2 11.8V13V12.5C16.2 11.9 17.2 11.9 17.2 12.5V17.5C17.2 19.5 15.6 21.1 13.6 21.1H9.8C7.8 21.1 6.2 19.5 6.2 17.5V12.8C6.2 11.8 7.2 11 8.2 11H9.2V3.5C9.2 2.1 11 2.1 11 3.5Z"/>
+    <!-- Fingernail detail -->
+    <path fill="#FFE4D6" stroke="#4A2511" stroke-width="1" d="M10.2 3.8C10.2 3.2 11 3.2 11 3.8V5.5C11 6 10.2 6 10.2 5.5Z"/>
+  </g>
+</svg>
